@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Email Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="badge">MINI PROJECT</span>
+      <h1>Spam Email Detection</h1>
+      <p class="subtitle">Check an email message for common spam warning signs.</p>
+    </header>
+
+    <section class="card">
+      <form id="detector-form">
+        <label for="email_text">Paste your email message</label>
+        <textarea id="email_text" name="email_text" rows="8"
+          placeholder="Example: Congratulations! You have won a free prize. Click here..." required></textarea>
+        <button type="submit">Detect Spam</button>
+      </form>
+      <section id="result" class="result hidden" aria-live="polite"></section>
+    </section>
+
+    <section class="info">
+      <h2>How it works</h2>
+      <ol>
+        <li>Paste or type an email message.</li>
+        <li>The page checks for suspicious keywords, links, and long numbers.</li>
+        <li>It displays a Spam or Not Spam result with the warning signs found.</li>
+      </ol>
+      <p class="note"><strong>Note:</strong> This is a front-end educational demo using simple rules, not a trained machine-learning model. It can make mistakes.</p>
+    </section>
+    <footer>Spam Email Detection · HTML + CSS + JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
